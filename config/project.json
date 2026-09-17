@@ -1,0 +1,52 @@
+{
+  "name": "Knowledge Graph Risk Engine",
+  "problem": "Risk teams need relationship-level explanations instead of opaque entity scores.",
+  "domain": "knowledge-graphs",
+  "architecture": "graph",
+  "hugging_face_tasks": [
+    "token-classification",
+    "feature-extraction",
+    "question-answering",
+    "sentence-similarity"
+  ],
+  "recommended_stack": [
+    "FastAPI for entity and evidence APIs",
+    "Neo4j Community or PostgreSQL recursive queries",
+    "Sentence Transformers for entity resolution",
+    "NetworkX for local graph validation",
+    "Kafka-compatible event ingestion",
+    "OpenTelemetry for lineage and query traces"
+  ],
+  "real_world_data_sources": [
+    {
+      "name": "SEC EDGAR submissions API",
+      "url": "https://data.sec.gov/submissions/CIK0000320193.json",
+      "purpose": "Public company and filing relationships"
+    },
+    {
+      "name": "GLEIF LEI API",
+      "url": "https://api.gleif.org/api/v1/lei-records?page[size]=5",
+      "purpose": "Public legal-entity identifiers and relationships"
+    }
+  ],
+  "job_description_skills": [
+    "Entity resolution and relation extraction",
+    "Knowledge-graph modeling and path queries",
+    "Graph-based explainability and provenance",
+    "Streaming ingestion and schema evolution",
+    "Risk-model evaluation and data quality controls"
+  ],
+  "impact_targets": [
+    "Reach entity-resolution precision >= 0.95 on reviewed pairs",
+    "Return evidence paths for 100% of emitted risk flags",
+    "Process 10,000 relationship events per minute in load tests",
+    "Detect schema and orphan-node regressions in CI"
+  ],
+  "baseline_evaluation": {
+    "test_examples": 4,
+    "accuracy": 1,
+    "synthetic_evaluation": true
+  },
+  "estimated_delivery": "8-12 weeks for one engineer",
+  "generated_baseline_is_production_ready": false
+}

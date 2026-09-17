@@ -1,0 +1,4 @@
+{"id":"knowledge-graph-risk-2-1","input":"Which account paid vendor beta?","label":"transaction","context":"account-17 paid vendor-beta","source":"graph-02","variant":"direct","synthetic":true}
+{"id":"knowledge-graph-risk-3-2","input":"In an operations review, Where is warehouse north located?","label":"location","context":"warehouse-north located-in region-east","source":"graph-03","variant":"operations","synthetic":true}
+{"id":"knowledge-graph-risk-4-3","input":"For an evaluation case, Which company owns vendor gamma?","label":"ownership","context":"company-delta owns vendor-gamma","source":"graph-04","variant":"evaluation","synthetic":true}
+{"id":"knowledge-graph-risk-6-1","input":"What region contains facility blue?","label":"location","context":"facility-blue located-in region-west","source":"graph-06","variant":"direct","synthetic":true}

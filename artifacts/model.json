@@ -1,0 +1,192 @@
+{
+  "format": "daily-project-prototype-v1",
+  "project": "knowledge-graph-risk",
+  "title": "Knowledge Graph Risk Engine",
+  "domain": "knowledge-graphs",
+  "mode": "graph",
+  "labels": [
+    "ownership",
+    "transaction",
+    "location"
+  ],
+  "prototypes": {
+    "ownership": {
+      "who": 3,
+      "controls": 6,
+      "supplier": 6,
+      "alpha": 9,
+      "company": 7,
+      "in": 2,
+      "an": 3,
+      "operations": 2,
+      "review": 2,
+      "for": 1,
+      "evaluation": 1,
+      "case": 1,
+      "which": 2,
+      "owns": 4,
+      "vendor": 4,
+      "gamma": 4,
+      "delta": 2
+    },
+    "transaction": {
+      "17": 8,
+      "in": 2,
+      "an": 4,
+      "operations": 2,
+      "review": 2,
+      "which": 2,
+      "account": 10,
+      "paid": 4,
+      "vendor": 4,
+      "beta": 4,
+      "for": 2,
+      "evaluation": 2,
+      "case": 2,
+      "what": 3,
+      "transfer": 3,
+      "connects": 3,
+      "and": 3,
+      "supplier": 6,
+      "alpha": 6,
+      "transferred": 3,
+      "to": 3
+    },
+    "location": {
+      "where": 2,
+      "is": 2,
+      "warehouse": 4,
+      "north": 4,
+      "located": 6,
+      "in": 5,
+      "region": 6,
+      "east": 2,
+      "for": 2,
+      "an": 3,
+      "evaluation": 2,
+      "case": 2,
+      "operations": 1,
+      "review": 1,
+      "what": 2,
+      "contains": 2,
+      "facility": 4,
+      "blue": 4,
+      "west": 2
+    }
+  },
+  "idf": {
+    "17": 1.847298,
+    "company": 1.847298,
+    "alpha": 1.847298,
+    "controls": 2.252763,
+    "supplier": 1.847298,
+    "account": 1.847298,
+    "paid": 2.252763,
+    "vendor": 1.847298,
+    "beta": 2.252763,
+    "warehouse": 2.252763,
+    "north": 2.252763,
+    "located": 1.847298,
+    "in": 1.847298,
+    "region": 1.847298,
+    "east": 2.252763,
+    "delta": 2.252763,
+    "owns": 2.252763,
+    "gamma": 2.252763,
+    "transferred": 2.252763,
+    "to": 2.252763,
+    "facility": 2.252763,
+    "blue": 2.252763,
+    "west": 2.252763
+  },
+  "documents": [
+    {
+      "id": "graph-01",
+      "label": "ownership",
+      "text": "company-alpha controls supplier-alpha",
+      "metadata": {
+        "synthetic": true,
+        "domain": "knowledge-graphs"
+      }
+    },
+    {
+      "id": "graph-02",
+      "label": "transaction",
+      "text": "account-17 paid vendor-beta",
+      "metadata": {
+        "synthetic": true,
+        "domain": "knowledge-graphs"
+      }
+    },
+    {
+      "id": "graph-03",
+      "label": "location",
+      "text": "warehouse-north located-in region-east",
+      "metadata": {
+        "synthetic": true,
+        "domain": "knowledge-graphs"
+      }
+    },
+    {
+      "id": "graph-04",
+      "label": "ownership",
+      "text": "company-delta owns vendor-gamma",
+      "metadata": {
+        "synthetic": true,
+        "domain": "knowledge-graphs"
+      }
+    },
+    {
+      "id": "graph-05",
+      "label": "transaction",
+      "text": "account-17 transferred-to supplier-alpha",
+      "metadata": {
+        "synthetic": true,
+        "domain": "knowledge-graphs"
+      }
+    },
+    {
+      "id": "graph-06",
+      "label": "location",
+      "text": "facility-blue located-in region-west",
+      "metadata": {
+        "synthetic": true,
+        "domain": "knowledge-graphs"
+      }
+    }
+  ],
+  "graph_edges": [
+    [
+      "company-alpha",
+      "controls",
+      "supplier-alpha"
+    ],
+    [
+      "account-17",
+      "paid",
+      "vendor-beta"
+    ],
+    [
+      "warehouse-north",
+      "located-in",
+      "region-east"
+    ],
+    [
+      "company-delta",
+      "owns",
+      "vendor-gamma"
+    ],
+    [
+      "account-17",
+      "transferred-to",
+      "supplier-alpha"
+    ],
+    [
+      "facility-blue",
+      "located-in",
+      "region-west"
+    ]
+  ],
+  "confidence_threshold": 0.18,
+  "trained_on_synthetic_data": true
+}
